@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Events | Voyage of Visuals: Resonance</title>
+<link rel="icon" href="uploads/pasted-1784787087575-0.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400&display=swap" rel="stylesheet">
+<script src="./image-slot.js"></script>
+<style>
+html{scroll-behavior:smooth}
+body{margin:0;background:#003B47;color:#EFF6EA;font-family:'Inter',sans-serif;-webkit-font-smoothing:antialiased}
+a{color:#BCDC9A;text-decoration:none}
+a:hover{color:#CDE6C6}
+@keyframes vvHeroUp{from{opacity:0;transform:translateY(34px)}to{opacity:1;transform:none}}
+@keyframes vvRing{0%{transform:scale(.94);opacity:.45}50%{transform:scale(1.05);opacity:.9}100%{transform:scale(.94);opacity:.45}}
+</style>
+</helmet>
+
+<nav id="vv-nav" style="position:fixed;top:0;left:0;right:0;z-index:60;transition:background .4s,box-shadow .4s;border-bottom:1px solid transparent">
+  <div style="max-width:1280px;margin:0 auto;padding:16px clamp(16px,4vw,36px);display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap">
+    <a href="Home.dc.html" style="display:flex;align-items:center;gap:14px;color:#EFF6EA">
+      <img src="uploads/pasted-1784787087575-0.png" alt="BUET Photographic Society" style="width:52px;height:52px;border-radius:50%;box-shadow:0 4px 16px rgba(0,0,0,.4)">
+      <span style="display:flex;flex-direction:column;line-height:1.15">
+        <span style="font-weight:800;font-size:clamp(15px,2.6vw,19px);letter-spacing:.01em">BUET Photographic Society</span>
+        <span style="font-weight:500;font-size:clamp(10px,1.8vw,12px);letter-spacing:.24em;text-transform:uppercase;color:#BCDC9A">Voyage of Visuals</span>
+      </span>
+    </a>
+    <div style="display:flex;gap:clamp(16px,3.4vw,36px);flex-wrap:wrap;align-items:center">
+      <a href="Home.dc.html" style="color:#EFF6EA;font-size:15px;font-weight:600;padding-bottom:4px;background:linear-gradient(#BCDC9A,#BCDC9A) left bottom / 0% 2px no-repeat;transition:background-size .3s,color .3s" style-hover="background-size:100% 2px;color:#CDE6C6">Home</a>
+      <a href="Events.dc.html" style="color:#BCDC9A;font-size:15px;font-weight:700;padding-bottom:4px;background:linear-gradient(#BCDC9A,#BCDC9A) left bottom / 100% 2px no-repeat">Events</a>
+      <a href="About.dc.html" style="color:#EFF6EA;font-size:15px;font-weight:600;padding-bottom:4px;background:linear-gradient(#BCDC9A,#BCDC9A) left bottom / 0% 2px no-repeat;transition:background-size .3s,color .3s" style-hover="background-size:100% 2px;color:#CDE6C6">About</a>
+    </div>
+  </div>
+</nav>
+
+<header style="position:relative;padding:clamp(150px,20vw,220px) clamp(16px,4vw,36px) clamp(60px,8vw,90px);overflow:hidden;background:radial-gradient(900px 500px at 80% 0%, rgba(188,220,154,.09), transparent 60%), #003B47">
+  <div style="position:absolute;inset:0;background-image:radial-gradient(rgba(188,220,154,.3) 1.8px, transparent 1.8px);background-size:26px 26px;-webkit-mask-image:linear-gradient(115deg,transparent 45%,rgba(0,0,0,.95) 75%);mask-image:linear-gradient(115deg,transparent 45%,rgba(0,0,0,.95) 75%);pointer-events:none"></div>
+  <div style="position:absolute;top:-120px;right:-100px;width:min(40vw,420px);aspect-ratio:1;border:1px solid rgba(205,230,198,.2);border-radius:50%;animation:vvRing 9s ease-in-out infinite;pointer-events:none"></div>
+  <div style="position:relative;max-width:1140px;margin:0 auto">
+    <p style="margin:0 0 14px;font-size:14px;letter-spacing:.32em;text-transform:uppercase;color:#BCDC9A;font-weight:700;animation:vvHeroUp .9s cubic-bezier(.22,1,.36,1) both">BUET Photographic Society</p>
+    <h1 style="margin:0;font-size:clamp(52px,9vw,110px);font-weight:900;letter-spacing:-.015em;line-height:1;color:#EFF6EA;animation:vvHeroUp .9s cubic-bezier(.22,1,.36,1) .12s both">Our <span style="color:#BCDC9A">Events</span></h1>
+    <p style="margin:24px 0 0;max-width:620px;font-size:clamp(16px,2.2vw,18px);line-height:1.8;color:rgba(239,246,234,.8);animation:vvHeroUp .9s cubic-bezier(.22,1,.36,1) .24s both">From intra university showcases to flagship international exhibitions, every event is another leg of the voyage.</p>
+  </div>
+</header>
+
+<section style="position:relative;overflow:hidden;padding:clamp(30px,5vw,60px) clamp(16px,4vw,36px) clamp(70px,9vw,110px);background:radial-gradient(900px 600px at 12% 40%, rgba(188,220,154,.07), transparent 60%), #003B47">
+  <div style="position:absolute;inset:0;background-image:radial-gradient(rgba(188,220,154,.2) 1.8px, transparent 1.8px);background-size:26px 26px;-webkit-mask-image:linear-gradient(245deg,transparent 52%,rgba(0,0,0,.85) 85%);mask-image:linear-gradient(245deg,transparent 52%,rgba(0,0,0,.85) 85%);pointer-events:none"></div>
+  <div style="position:relative;max-width:1140px;margin:0 auto">
+    <div data-reveal="0" style="display:flex;align-items:center;gap:18px;margin-bottom:30px">
+      <h2 style="margin:0;font-size:clamp(30px,4.6vw,48px);font-weight:900;letter-spacing:-.01em;color:#EFF6EA">Upcoming</h2>
+      <span style="height:1px;flex:1;background:linear-gradient(90deg,rgba(188,220,154,.5),transparent)"></span>
+    </div>
+    <div data-reveal="1" style="border-radius:22px;overflow:hidden;border:1px solid rgba(188,220,154,.22);background:#01323d;box-shadow:0 26px 64px rgba(0,0,0,.4)">
+      <a href="Home.dc.html" style="display:block;overflow:hidden">
+        <img src="assets/poster.jpg" alt="Voyage of Visuals: Resonance, Call for Photos, deadline 4 August" decoding="async" style="display:block;width:100%;height:auto;aspect-ratio:2400/1086;transition:transform .6s cubic-bezier(.22,1,.36,1)" style-hover="transform:scale(1.025)">
+      </a>
+      <div style="padding:clamp(24px,4vw,40px);display:flex;flex-wrap:wrap;gap:24px;align-items:center;justify-content:space-between">
+        <div>
+          <span style="display:inline-block;padding:7px 16px;border-radius:999px;background:rgba(188,220,154,.16);border:1px solid rgba(188,220,154,.4);color:#BCDC9A;font-size:12.5px;font-weight:800;letter-spacing:.18em;text-transform:uppercase">Happening now</span>
+          <h3 style="margin:14px 0 6px;font-size:clamp(24px,3.6vw,34px);font-weight:800;color:#EFF6EA">Voyage of Visuals: Resonance</h3>
+          <p style="margin:0;font-size:15.5px;color:rgba(239,246,234,.75)">Flagship International Exhibition · Submissions close 4 August</p>
+        </div>
+        <div style="display:flex;gap:12px;flex-wrap:wrap">
+          <a href="Home.dc.html" style="display:inline-block;padding:14px 30px;border-radius:999px;background:#BCDC9A;color:#003B47;font-weight:800;font-size:15px;transition:background .3s,transform .3s" style-hover="background:#CDE6C6;transform:translateY(-2px);color:#003B47">Call for Photos</a>
+          <a href="{{ facebookEventUrl }}" target="_blank" rel="noopener" style="display:inline-block;padding:14px 30px;border-radius:999px;border:1.5px solid rgba(188,220,154,.55);color:#EFF6EA;font-weight:700;font-size:15px;transition:border-color .3s,transform .3s,background .3s" style-hover="border-color:#CDE6C6;background:rgba(188,220,154,.1);transform:translateY(-2px);color:#EFF6EA">Facebook event</a>
+        </div>
+      </div>
+    </div>
+
+    <div data-reveal="0" style="display:flex;align-items:center;gap:18px;margin:clamp(60px,8vw,90px) 0 30px">
+      <h2 style="margin:0;font-size:clamp(30px,4.6vw,48px);font-weight:900;letter-spacing:-.01em;color:#EFF6EA">Past events</h2>
+      <span style="height:1px;flex:1;background:linear-gradient(90deg,rgba(188,220,154,.5),transparent)"></span>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr));gap:30px">
+      <div data-reveal="0" style="border-radius:20px;overflow:hidden;border:1px solid rgba(188,220,154,.16);background:rgba(239,246,234,.04);transition:transform .35s,box-shadow .35s,border-color .35s" style-hover="transform:translateY(-6px);box-shadow:0 18px 44px rgba(0,0,0,.35);border-color:rgba(188,220,154,.4)">
+        <div style="height:clamp(280px,30vw,400px)">
+          <image-slot id="evt-remembrance" shape="rect" src="assets/gallery/remembrance.jpg" placeholder="Drop the Remembrance photo"></image-slot>
+        </div>
+        <div style="padding:22px 24px 26px">
+          <h3 style="margin:0 0 8px;font-size:clamp(22px,2.6vw,27px);font-weight:800;color:#EFF6EA">Remembrance: 25 Years of BUETPS</h3>
+          <p style="margin:0;font-size:16px;color:rgba(239,246,234,.72)">International Exhibition, 2023</p>
+        </div>
+      </div>
+      <div data-reveal="1" style="border-radius:20px;overflow:hidden;border:1px solid rgba(188,220,154,.16);background:rgba(239,246,234,.04);transition:transform .35s,box-shadow .35s,border-color .35s" style-hover="transform:translateY(-6px);box-shadow:0 18px 44px rgba(0,0,0,.35);border-color:rgba(188,220,154,.4)">
+        <div style="height:clamp(280px,30vw,400px)">
+          <image-slot id="evt-coexistence" shape="rect" src="https://buet-ps.github.io/Events/88b158bb09bc09898b63f63ff499fa84.jpg" placeholder="Drop the Coexistence poster"></image-slot>
+        </div>
+        <div style="padding:22px 24px 26px">
+          <h3 style="margin:0 0 8px;font-size:clamp(22px,2.6vw,27px);font-weight:800;color:#EFF6EA">Voyage of Visuals: Coexistence</h3>
+          <p style="margin:0;font-size:16px;color:rgba(239,246,234,.72)">Flagship International Exhibition, 2023</p>
+        </div>
+      </div>
+      <div data-reveal="2" style="border-radius:20px;overflow:hidden;border:1px solid rgba(188,220,154,.16);background:rgba(239,246,234,.04);transition:transform .35s,box-shadow .35s,border-color .35s" style-hover="transform:translateY(-6px);box-shadow:0 18px 44px rgba(0,0,0,.35);border-color:rgba(188,220,154,.4)">
+        <div style="height:clamp(280px,30vw,400px)">
+          <image-slot id="evt-13th" shape="rect" src="https://buet-ps.github.io/Events/2794c5bf83672f5a0cd809a82ed12405.jpg" placeholder="Drop the 13th Annual poster"></image-slot>
+        </div>
+        <div style="padding:22px 24px 26px">
+          <h3 style="margin:0 0 8px;font-size:clamp(22px,2.6vw,27px);font-weight:800;color:#EFF6EA">13th Annual</h3>
+          <p style="margin:0;font-size:16px;color:rgba(239,246,234,.72)">Intra University Photography Exhibition, 2019</p>
+        </div>
+      </div>
+      <div data-reveal="3" style="border-radius:20px;overflow:hidden;border:1px solid rgba(188,220,154,.16);background:rgba(239,246,234,.04);transition:transform .35s,box-shadow .35s,border-color .35s" style-hover="transform:translateY(-6px);box-shadow:0 18px 44px rgba(0,0,0,.35);border-color:rgba(188,220,154,.4)">
+        <div style="height:clamp(280px,30vw,400px)">
+          <image-slot id="evt-divergence" shape="rect" src="https://buet-ps.github.io/Events/1daa80ea8c9495bd29ae6796168a0e3d.jpg" placeholder="Drop the Divergence poster"></image-slot>
+        </div>
+        <div style="padding:22px 24px 26px">
+          <h3 style="margin:0 0 8px;font-size:clamp(22px,2.6vw,27px);font-weight:800;color:#EFF6EA">Voyage of Visuals: Divergence</h3>
+          <p style="margin:0;font-size:16px;color:rgba(239,246,234,.72)">Flagship International Exhibition, 2018</p>
+        </div>
+      </div>
+      <div data-reveal="4" style="border-radius:20px;overflow:hidden;border:1px solid rgba(188,220,154,.16);background:rgba(239,246,234,.04);transition:transform .35s,box-shadow .35s,border-color .35s" style-hover="transform:translateY(-6px);box-shadow:0 18px 44px rgba(0,0,0,.35);border-color:rgba(188,220,154,.4)">
+        <div style="height:clamp(280px,30vw,400px)">
+          <image-slot id="evt-beyond" shape="rect" src="https://buet-ps.github.io/Events/feb06764709b1b9c5849f5e1fc80f031.jpg" placeholder="Drop the Beyond poster"></image-slot>
+        </div>
+        <div style="padding:22px 24px 26px">
+          <h3 style="margin:0 0 8px;font-size:clamp(22px,2.6vw,27px);font-weight:800;color:#EFF6EA">Beyond: 20th Anniversary of BUETPS</h3>
+          <p style="margin:0;font-size:16px;color:rgba(239,246,234,.72)">Intra University Exhibition, 2017</p>
+        </div>
+      </div>
+      <div data-reveal="5" style="border-radius:20px;overflow:hidden;border:1px solid rgba(188,220,154,.16);background:rgba(239,246,234,.04);transition:transform .35s,box-shadow .35s,border-color .35s" style-hover="transform:translateY(-6px);box-shadow:0 18px 44px rgba(0,0,0,.35);border-color:rgba(188,220,154,.4)">
+        <div style="height:clamp(280px,30vw,400px)">
+          <image-slot id="evt-belongingness" shape="rect" src="assets/gallery/belongingness.jpg" placeholder="Drop the Belongingness photo"></image-slot>
+        </div>
+        <div style="padding:22px 24px 26px">
+          <h3 style="margin:0 0 8px;font-size:clamp(22px,2.6vw,27px);font-weight:800;color:#EFF6EA">Voyage of Visuals: Belongingness</h3>
+          <p style="margin:0;font-size:16px;color:rgba(239,246,234,.72)">Flagship Exhibition, 2016</p>
+        </div>
+      </div>
+      <div data-reveal="6" style="border-radius:20px;overflow:hidden;border:1px solid rgba(188,220,154,.16);background:rgba(239,246,234,.04);transition:transform .35s,box-shadow .35s,border-color .35s" style-hover="transform:translateY(-6px);box-shadow:0 18px 44px rgba(0,0,0,.35);border-color:rgba(188,220,154,.4)">
+        <div style="height:clamp(280px,30vw,400px)">
+          <image-slot id="evt-portraiture" shape="rect" src="assets/gallery/portraiture.jpg" placeholder="Drop the Portraiture photo"></image-slot>
+        </div>
+        <div style="padding:22px 24px 26px">
+          <h3 style="margin:0 0 8px;font-size:clamp(22px,2.6vw,27px);font-weight:800;color:#EFF6EA">Voyage of Visuals: Portraiture</h3>
+          <p style="margin:0;font-size:16px;color:rgba(239,246,234,.72)">Flagship Exhibition, 2014</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer style="padding:clamp(64px,9vw,110px) clamp(16px,4vw,36px) 40px;background:#00303a;border-top:1px solid rgba(188,220,154,.12)">
+  <div style="max-width:1140px;margin:0 auto">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:clamp(36px,5vw,64px);align-items:start">
+      <div data-reveal="0" style="max-width:440px">
+        <div style="display:flex;align-items:center;gap:16px">
+          <img src="uploads/pasted-1784787087575-0.png" alt="BUET Photographic Society logo" style="width:64px;height:64px;border-radius:50%;box-shadow:0 6px 18px rgba(0,0,0,.4)">
+          <div>
+            <div style="font-weight:800;font-size:19px;color:#EFF6EA">BUET Photographic Society</div>
+            <div style="font-size:13.5px;color:rgba(239,246,234,.65)">Voyage of Visuals: Resonance</div>
+          </div>
+        </div>
+        <p style="margin:22px 0 0;font-size:16px;line-height:1.8;color:rgba(239,246,234,.75)">Questions about submissions, results or the exhibition? Reach out on any of our channels, we are happy to help.</p>
+      
+      </div>
+      <div data-reveal="1">
+        <h4 style="margin:0 0 20px;font-size:15px;letter-spacing:.26em;text-transform:uppercase;color:#BCDC9A;font-weight:800">Explore</h4>
+        <div style="display:flex;flex-direction:column;gap:15px">
+          <a href="Home.dc.html" style="font-size:17px;color:#EFF6EA;transition:color .3s" style-hover="color:#BCDC9A">Call for Photos</a>
+          <a href="Events.dc.html" style="font-size:17px;color:#EFF6EA;transition:color .3s" style-hover="color:#BCDC9A">Events</a>
+          <a href="About.dc.html" style="font-size:17px;color:#EFF6EA;transition:color .3s" style-hover="color:#BCDC9A">About BUETPS</a>
+        </div>
+      </div>
+      <div data-reveal="2">
+        <h4 style="margin:0 0 20px;font-size:15px;letter-spacing:.26em;text-transform:uppercase;color:#BCDC9A;font-weight:800">Connect</h4>
+        <div style="display:flex;gap:14px;flex-wrap:wrap">
+          <a href="https://www.facebook.com/buetps" target="_blank" rel="noopener" aria-label="Facebook" title="facebook.com/buetps" style="width:54px;height:54px;border-radius:50%;background:rgba(188,220,154,.08);border:1.5px solid rgba(188,220,154,.4);display:flex;align-items:center;justify-content:center;transition:background .3s,transform .3s,border-color .3s,box-shadow .3s" style-hover="background:rgba(188,220,154,.2);transform:translateY(-3px);border-color:#CDE6C6;box-shadow:0 10px 24px rgba(0,0,0,.3)">
+            <svg width="20" height="20" viewBox="0 0 24 24" style="fill:#BCDC9A;transition:fill .3s"><path d="M13.5 21v-7h2.6l.4-3h-3V9.1c0-.9.25-1.5 1.55-1.5H16.6V4.9c-.28-.04-1.23-.12-2.34-.12-2.32 0-3.9 1.4-3.9 4v2.2H7.75v3h2.6v7h3.15z"></path></svg>
+          </a>
+          <a href="https://www.instagram.com/buet_ps" target="_blank" rel="noopener" aria-label="Instagram" title="instagram.com/buet_ps" style="width:54px;height:54px;border-radius:50%;background:rgba(188,220,154,.08);border:1.5px solid rgba(188,220,154,.4);display:flex;align-items:center;justify-content:center;transition:background .3s,transform .3s,border-color .3s,box-shadow .3s" style-hover="background:rgba(188,220,154,.2);transform:translateY(-3px);border-color:#CDE6C6;box-shadow:0 10px 24px rgba(0,0,0,.3)">
+            <svg width="20" height="20" viewBox="0 0 24 24" style="fill:none"><rect x="3" y="3" width="18" height="18" rx="5" style="stroke:#BCDC9A;stroke-width:1.8;transition:stroke .3s"></rect><circle cx="12" cy="12" r="4.2" style="stroke:#BCDC9A;stroke-width:1.8;transition:stroke .3s"></circle><circle cx="17.2" cy="6.8" r="1.3" style="fill:#BCDC9A;transition:fill .3s"></circle></svg>
+          </a>
+          <a href="mailto:buetps.official@gmail.com" aria-label="Email" title="buetps.official@gmail.com" style="width:54px;height:54px;border-radius:50%;background:rgba(188,220,154,.08);border:1.5px solid rgba(188,220,154,.4);display:flex;align-items:center;justify-content:center;transition:background .3s,transform .3s,border-color .3s,box-shadow .3s" style-hover="background:rgba(188,220,154,.2);transform:translateY(-3px);border-color:#CDE6C6;box-shadow:0 10px 24px rgba(0,0,0,.3)">
+            <svg width="20" height="20" viewBox="0 0 24 24" style="fill:none"><rect x="3" y="5" width="18" height="14" rx="2.5" style="stroke:#BCDC9A;stroke-width:1.8;transition:stroke .3s"></rect><path d="M4 7l8 6 8-6" style="stroke:#BCDC9A;stroke-width:1.8;fill:none;transition:stroke .3s"></path></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div style="margin-top:clamp(44px,6vw,70px);padding-top:26px;border-top:1px solid rgba(188,220,154,.1);display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;align-items:center">
+      <span style="font-size:13.5px;color:rgba(239,246,234,.55)">© BUET Photographic Society, 2026</span>
+      <span style="font-size:13.5px;color:rgba(239,246,234,.55)">Voyage of Visuals: Resonance</span>
+    </div>
+  </div>
+</footer>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;facebookEventUrl&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;https://www.facebook.com/buetps&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Links&quot;}}">
+class Component extends DCLogic {
+  renderVals() {
+    return { facebookEventUrl: this.props.facebookEventUrl ?? 'https://www.facebook.com/buetps' };
+  }
+  componentDidMount() {
+    const ease = 'cubic-bezier(.22,1,.36,1)';
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => {
+        if (e.isIntersecting) {
+          const t = e.target;
+          t.style.opacity = '1';
+          t.style.transform = 'none';
+          io.unobserve(t);
+        }
+      });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('[data-reveal]').forEach((el) => {
+      if (el.getBoundingClientRect().top < window.innerHeight * 0.85) return;
+      const d = (parseInt(el.dataset.reveal, 10) || 0) * 110;
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(30px)';
+      el.style.transition = 'opacity .8s ' + ease + ' ' + d + 'ms, transform .8s ' + ease + ' ' + d + 'ms';
+      io.observe(el);
+    });
+    const nav = document.getElementById('vv-nav');
+    const onScroll = () => {
+      if (window.scrollY > 40) {
+        nav.style.background = 'rgba(0,44,54,.88)';
+        nav.style.backdropFilter = 'blur(14px)';
+        nav.style.webkitBackdropFilter = 'blur(14px)';
+        nav.style.boxShadow = '0 10px 30px rgba(0,0,0,.3)';
+        nav.style.borderBottom = '1px solid rgba(188,220,154,.14)';
+      } else {
+        nav.style.background = 'transparent';
+        nav.style.backdropFilter = 'none';
+        nav.style.webkitBackdropFilter = 'none';
+        nav.style.boxShadow = 'none';
+        nav.style.borderBottom = '1px solid transparent';
+      }
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+  }
+}
+</script>
+</body>
+</html>
