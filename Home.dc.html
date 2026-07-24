@@ -52,6 +52,7 @@ image-slot::part(image){touch-action:pan-y}
   <div style="position:absolute;inset:0;background-image:radial-gradient(rgba(188,220,154,.42) 2.2px, transparent 2.2px);background-size:26px 26px;-webkit-mask-image:linear-gradient(105deg,transparent 36%,rgba(0,0,0,1) 68%);mask-image:linear-gradient(105deg,transparent 36%,rgba(0,0,0,1) 68%);pointer-events:none"></div>
   <div style="position:absolute;top:50%;right:max(-160px,-12vw);transform:translateY(-50%);width:min(62vw,760px);aspect-ratio:1;border:1px solid rgba(188,220,154,.16);border-radius:50%;animation:vvRing 10s ease-in-out infinite;pointer-events:none"></div>
   <div style="position:absolute;top:50%;right:calc(max(-160px,-12vw) + min(8vw,100px));transform:translateY(-50%);width:min(46vw,560px);aspect-ratio:1;border:1px solid rgba(205,230,198,.2);border-radius:50%;animation:vvRing 10s ease-in-out 1.4s infinite;pointer-events:none"></div>
+  <div style="position:absolute;left:0;right:0;bottom:0;height:clamp(160px,22vh,260px);background:linear-gradient(180deg,transparent,#01323d);pointer-events:none"></div>
   <div style="position:relative;max-width:1280px;margin:0 auto;width:100%;padding:130px clamp(16px,4vw,36px) 80px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:clamp(36px,5vw,72px);align-items:center">
     <div>
       <p style="margin:0 0 22px;font-size:clamp(12px,2vw,16px);letter-spacing:.3em;text-transform:uppercase;color:rgba(239,246,234,.75);font-weight:600;animation:vvHeroUp .9s cubic-bezier(.22,1,.36,1) both">BUET Photographic Society presents</p>
@@ -85,7 +86,6 @@ image-slot::part(image){touch-action:pan-y}
       </div>
     </div>
   </div>
-  <a href="#call" style="position:absolute;left:50%;bottom:26px;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:6px;color:rgba(239,246,234,.6);font-size:11px;letter-spacing:.28em;text-transform:uppercase;font-weight:600;transition:color .3s" style-hover="color:#BCDC9A">Scroll<span style="width:1px;height:34px;background:linear-gradient(rgba(188,220,154,.8),transparent)"></span></a>
 </header>
 
 <section id="call" style="position:relative;overflow:hidden;scroll-margin-top:90px;padding:clamp(80px,11vw,140px) clamp(16px,4vw,36px);background:radial-gradient(1000px 700px at 88% 15%, rgba(188,220,154,.08), transparent 60%), #01323d">
@@ -213,21 +213,23 @@ image-slot::part(image){touch-action:pan-y}
       </div>
     </div>
 
-    <details data-reveal="0" style="margin-top:44px;background:rgba(239,246,234,.035);border:1px solid rgba(188,220,154,.14);border-radius:18px;overflow:hidden">
-      <summary style="cursor:pointer;padding:24px 28px;display:flex;align-items:center;justify-content:space-between;gap:16px;font-weight:800;font-size:18px;color:#EFF6EA;transition:background .3s" style-hover="background:rgba(188,220,154,.06)">Terms &amp; Conditions<span style="color:#BCDC9A;font-size:22px;font-weight:400">+</span></summary>
+    <div data-reveal="0" style="margin-top:44px;background:rgba(239,246,234,.035);border:1px solid rgba(188,220,154,.14);border-radius:18px;overflow:hidden">
+      <div style="padding:24px 28px;display:flex;align-items:center;gap:16px;font-weight:800;font-size:18px;color:#EFF6EA">Terms &amp; Conditions</div>
       <div style="padding:0 28px 28px">
-        <ul style="margin:0;padding-left:18px;display:flex;flex-direction:column;gap:10px;font-size:15px;line-height:1.75;color:rgba(239,246,234,.82)">
-          <li>The photographer must be the sole owner of the submitted work.</li>
+        <ul style="margin:0;padding-left:18px;display:flex;flex-direction:column;gap:11px;font-size:15px;line-height:1.75;color:rgba(239,246,234,.82)">
+          <li>The photographer must be the sole owner of their work.</li>
           <li>Photo manipulation is allowed, but every element of the photograph must be the photographer's own creation.</li>
-          <li>Photographs featuring sculptures, paintings or other artworks are accepted only as objects in their environment, not as full frame close ups of someone else's art.</li>
-          <li>By entering, the participant confirms the photograph is original and does not infringe on any copyright, trademark, privacy or intellectual property rights of any person or entity.</li>
-          <li>Photographs must not contain obscene, defamatory, sexually explicit or otherwise inappropriate content.</li>
-          <li>BUETPS reserves the right to verify the authenticity of any submission.</li>
-          <li>BUETPS may use submitted photographs for promotional purposes. Selected photos will never be used commercially.</li>
-          <li>If unforeseen circumstances prevent the exhibition from running as planned, BUETPS reserves the right to disqualify entries that tamper with the process, or to cancel, modify or suspend the exhibition.</li>
+          <li>Photographs that include sculptures, statues, paintings, and other works of art will be accepted as long as they do not constitute copyright infringement or fraud. When photographing the work of others, the piece must appear as an object within its environment, not as a full-frame close-up of another person's art.</li>
+          <li>By entering the exhibition, the entrant represents, acknowledges, and warrants that the submitted photograph is an original work created solely by the entrant, that it does not infringe the copyrights, trademarks, moral rights, rights of privacy or publicity, or intellectual property rights of any person or entity, and that no other party holds any right, title, claim, or interest in the photograph.</li>
+          <li>The photograph must not contain obscene, provocative, defamatory, sexually explicit, or otherwise inappropriate content.</li>
+          <li>BUETPS reserves the right to examine the authenticity of the photograph and its source material in order to confirm compliance with these rules.</li>
+          <li>BUETPS may use the submitted photographs for promotional purposes, with due credit to the photographer.</li>
+          <li>Selected photographs will not be used for any commercial purpose.</li>
         </ul>
+        <h5 style="margin:26px 0 12px;font-size:13.5px;letter-spacing:.2em;text-transform:uppercase;color:#BCDC9A;font-weight:800">Right to cancel or suspend the exhibition</h5>
+        <p style="margin:0;font-size:15px;line-height:1.75;color:rgba(239,246,234,.82)">BUETPS reserves the right, at its sole discretion, to disqualify any individual who tampers with the entry process. If the exhibition cannot run as planned for any unforeseen reason, or if any other cause beyond the control of BUETPS hampers its smooth operation, BUETPS further reserves the right to cancel, terminate, modify, or suspend the exhibition.</p>
       </div>
-    </details>
+    </div>
   </div>
 </section>
 
