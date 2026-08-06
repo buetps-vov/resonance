@@ -2,6 +2,7 @@
 
 Static site for the BUET Photographic Society annual exhibition.
 
+
 ## Hosting on GitHub Pages
 
 1. Push **the contents of this folder** to your repository root (not the folder itself).
