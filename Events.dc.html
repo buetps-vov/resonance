@@ -305,8 +305,58 @@ image-slot::part(image){touch-action:pan-y}
         </div>
         <span style="margin-left:auto;font-size:clamp(34px,6vw,60px);font-weight:900;color:rgba(188,220,154,.26);letter-spacing:-.02em;line-height:.9">2016</span>
       </div>
-      <div style="position:relative;overflow:hidden;border-radius:22px;border:1px solid rgba(188,220,154,.18);box-shadow:0 24px 58px rgba(0,0,0,.42);background:#02282f;height:clamp(320px,44vw,520px);display:flex;align-items:center;justify-content:center">
-        <img src="assets/gallery/belongingness.jpg" alt="Voyage of Visuals: Belongingness" loading="lazy" decoding="async" style="max-width:100%;max-height:100%;width:auto;height:auto;display:block">
+      <div data-carousel style="position:relative">
+        <div style="position:relative;overflow:hidden;border-radius:22px;border:1px solid rgba(188,220,154,.18);box-shadow:0 24px 58px rgba(0,0,0,.42)">
+          <div data-track style="display:flex;transition:transform .6s cubic-bezier(.22,1,.36,1)">
+          <div style="flex:none;width:100%;height:clamp(320px,44vw,520px);display:flex;align-items:center;justify-content:center;background:#02282f">
+            <img src="assets/gallery/belongingness.jpg" alt="Voyage of Visuals: Belongingness photo 1" loading="lazy" decoding="async" style="max-width:100%;max-height:100%;width:auto;height:auto;display:block">
+          </div>
+          <div style="flex:none;width:100%;height:clamp(320px,44vw,520px);display:flex;align-items:center;justify-content:center;background:#02282f">
+            <img src="assets/gallery/belongingness2/01.jpg" alt="Voyage of Visuals: Belongingness photo 2" loading="lazy" decoding="async" style="max-width:100%;max-height:100%;width:auto;height:auto;display:block">
+          </div>
+          <div style="flex:none;width:100%;height:clamp(320px,44vw,520px);display:flex;align-items:center;justify-content:center;background:#02282f">
+            <img src="assets/gallery/belongingness2/02.jpg" alt="Voyage of Visuals: Belongingness photo 3" loading="lazy" decoding="async" style="max-width:100%;max-height:100%;width:auto;height:auto;display:block">
+          </div>
+          <div style="flex:none;width:100%;height:clamp(320px,44vw,520px);display:flex;align-items:center;justify-content:center;background:#02282f">
+            <img src="assets/gallery/belongingness2/03.jpg" alt="Voyage of Visuals: Belongingness photo 4" loading="lazy" decoding="async" style="max-width:100%;max-height:100%;width:auto;height:auto;display:block">
+          </div>
+          <div style="flex:none;width:100%;height:clamp(320px,44vw,520px);display:flex;align-items:center;justify-content:center;background:#02282f">
+            <img src="assets/gallery/belongingness2/04.jpg" alt="Voyage of Visuals: Belongingness photo 5" loading="lazy" decoding="async" style="max-width:100%;max-height:100%;width:auto;height:auto;display:block">
+          </div>
+          <div style="flex:none;width:100%;height:clamp(320px,44vw,520px);display:flex;align-items:center;justify-content:center;background:#02282f">
+            <img src="assets/gallery/belongingness2/05.jpg" alt="Voyage of Visuals: Belongingness photo 6" loading="lazy" decoding="async" style="max-width:100%;max-height:100%;width:auto;height:auto;display:block">
+          </div>
+          <div style="flex:none;width:100%;height:clamp(320px,44vw,520px);display:flex;align-items:center;justify-content:center;background:#02282f">
+            <img src="assets/gallery/belongingness2/06.jpg" alt="Voyage of Visuals: Belongingness photo 7" loading="lazy" decoding="async" style="max-width:100%;max-height:100%;width:auto;height:auto;display:block">
+          </div>
+          </div>
+          <button data-prev aria-label="Previous photo" style="position:absolute;top:50%;transform:translateY(-50%);width:56px;height:56px;border-radius:50%;border:1.5px solid rgba(188,220,154,.55);background:rgba(0,40,49,.72);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0;z-index:3;transition:background .3s,transform .3s;left:clamp(10px,2vw,20px)" onmouseover="this.style.background='rgba(188,220,154,.3)';this.style.transform='translateY(-50%) scale(1.08)'" onmouseout="this.style.background='rgba(0,40,49,.72)';this.style.transform='translateY(-50%)'"><svg width="24" height="24" viewBox="0 0 24 24" style="fill:none"><path d="14.5 5.5 8 12l6.5 6.5" style="stroke:#CDE6C6;stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round;fill:none"></path></svg></button>
+          <button data-next aria-label="Next photo" style="position:absolute;top:50%;transform:translateY(-50%);width:56px;height:56px;border-radius:50%;border:1.5px solid rgba(188,220,154,.55);background:rgba(0,40,49,.72);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0;z-index:3;transition:background .3s,transform .3s;right:clamp(10px,2vw,20px)" onmouseover="this.style.background='rgba(188,220,154,.3)';this.style.transform='translateY(-50%) scale(1.08)'" onmouseout="this.style.background='rgba(0,40,49,.72)';this.style.transform='translateY(-50%)'"><svg width="24" height="24" viewBox="0 0 24 24" style="fill:none"><path d="9.5 5.5 16 12l-6.5 6.5" style="stroke:#CDE6C6;stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round;fill:none"></path></svg></button>
+          <div data-counter style="position:absolute;right:clamp(14px,2.5vw,22px);bottom:16px;padding:8px 16px;border-radius:999px;background:rgba(0,40,49,.82);border:1px solid rgba(188,220,154,.3);font-size:14px;font-weight:700;color:#EFF6EA;letter-spacing:.06em;z-index:3">1 / 7</div>
+        </div>
+        <div style="display:flex;gap:10px;margin-top:14px;overflow-x:auto;padding-bottom:6px">
+        <button data-thumb="0" aria-label="Show photo 1" style="flex:none;width:76px;height:56px;border-radius:9px;overflow:hidden;border:2px solid transparent;padding:0;cursor:pointer;background:#02282f;opacity:.4;transition:opacity .3s,border-color .3s">
+          <img src="assets/gallery/belongingness.jpg" alt="" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block">
+        </button>
+        <button data-thumb="1" aria-label="Show photo 2" style="flex:none;width:76px;height:56px;border-radius:9px;overflow:hidden;border:2px solid transparent;padding:0;cursor:pointer;background:#02282f;opacity:.4;transition:opacity .3s,border-color .3s">
+          <img src="assets/gallery/belongingness2/01.jpg" alt="" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block">
+        </button>
+        <button data-thumb="2" aria-label="Show photo 3" style="flex:none;width:76px;height:56px;border-radius:9px;overflow:hidden;border:2px solid transparent;padding:0;cursor:pointer;background:#02282f;opacity:.4;transition:opacity .3s,border-color .3s">
+          <img src="assets/gallery/belongingness2/02.jpg" alt="" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block">
+        </button>
+        <button data-thumb="3" aria-label="Show photo 4" style="flex:none;width:76px;height:56px;border-radius:9px;overflow:hidden;border:2px solid transparent;padding:0;cursor:pointer;background:#02282f;opacity:.4;transition:opacity .3s,border-color .3s">
+          <img src="assets/gallery/belongingness2/03.jpg" alt="" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block">
+        </button>
+        <button data-thumb="4" aria-label="Show photo 5" style="flex:none;width:76px;height:56px;border-radius:9px;overflow:hidden;border:2px solid transparent;padding:0;cursor:pointer;background:#02282f;opacity:.4;transition:opacity .3s,border-color .3s">
+          <img src="assets/gallery/belongingness2/04.jpg" alt="" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block">
+        </button>
+        <button data-thumb="5" aria-label="Show photo 6" style="flex:none;width:76px;height:56px;border-radius:9px;overflow:hidden;border:2px solid transparent;padding:0;cursor:pointer;background:#02282f;opacity:.4;transition:opacity .3s,border-color .3s">
+          <img src="assets/gallery/belongingness2/05.jpg" alt="" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block">
+        </button>
+        <button data-thumb="6" aria-label="Show photo 7" style="flex:none;width:76px;height:56px;border-radius:9px;overflow:hidden;border:2px solid transparent;padding:0;cursor:pointer;background:#02282f;opacity:.4;transition:opacity .3s,border-color .3s">
+          <img src="assets/gallery/belongingness2/06.jpg" alt="" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block">
+        </button>
+        </div>
       </div>
     </div>
     <div data-reveal="0" style="margin-top:clamp(60px,9vw,120px)">
