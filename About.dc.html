@@ -14,7 +14,6 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400&display=swap" rel="stylesheet">
-<script src="./image-slot.js"></script>
 <style>
 html{scroll-behavior:smooth}
 *,*::before,*::after{box-sizing:border-box}
@@ -68,10 +67,10 @@ image-slot::part(image){touch-action:pan-y}
       </div>
       <div data-reveal="1" style="display:flex;flex-direction:column;gap:16px">
         <div style="height:clamp(210px,28vw,320px);border-radius:18px;overflow:hidden;box-shadow:0 16px 40px rgba(0,0,0,.35)">
-          <image-slot id="hist-1" shape="rect" src="assets/gallery/about-02.jpg" placeholder="Drop a photo from BUETPS history"></image-slot>
+          <img src="assets/gallery/about-02.jpg" alt="" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block">
         </div>
         <div style="height:clamp(210px,28vw,320px);border-radius:18px;overflow:hidden;box-shadow:0 16px 40px rgba(0,0,0,.35)">
-          <image-slot id="hist-2" shape="rect" src="assets/gallery/about-03.jpg" placeholder="Drop an archive photo"></image-slot>
+          <img src="assets/gallery/about-03.jpg" alt="" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block">
         </div>
       </div>
     </div>
